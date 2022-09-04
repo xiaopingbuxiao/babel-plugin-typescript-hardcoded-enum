@@ -1,0 +1,51 @@
+{
+  "name": "babel-plugin-typescript-hardcoded-enum",
+  "version": "0.0.1",
+  "description": "A babel plugin can resolve typescript enum to hard code ",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:w": "jest --watchAll",
+    "build": "rm -rf ./lib ./es && npm run build:lib && npm run build:es",
+    "build:lib": "tsc -p ./tsconfig.build.json",
+    "test:coverage": "jest --coverage"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "const enum",
+    "babel plugin",
+    "hardcoded enum"
+  ],
+  "author": "pingjinhuo",
+  "license": "MIT",
+  "homepage": "https://github.com/xiaopingbuxiao/babel-plugin-typescript-hardcoded-enum/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaopingbuxiao/babel-plugin-typescript-hardcoded-enum"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/glob": "^8.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^18.7.14",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^29.0.1",
+    "ts-jest": "^28.0.8",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "typescript": "^4.1.6",
+    "@babel/parser": "^7.18.13",
+    "@babel/traverse": "^7.18.13",
+    "@babel/types": "^7.18.13",
+    "glob": "^8.0.3"
+  }
+}
