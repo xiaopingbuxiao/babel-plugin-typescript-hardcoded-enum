@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:w": "jest --watchAll",
-    "build": "rm -rf ./lib ./es && npm run build:lib && npm run build:es",
+    "build": "rm -rf ./lib ./es && npm run build:lib",
     "build:lib": "tsc -p ./tsconfig.build.json",
     "test:coverage": "jest --coverage"
   },
