@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-typescript-hardcoded-enum",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A babel plugin can resolve typescript enum to hard code ",
   "main": "lib/index.js",
   "scripts": {
